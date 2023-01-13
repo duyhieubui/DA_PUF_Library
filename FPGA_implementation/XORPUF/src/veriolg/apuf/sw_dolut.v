@@ -25,7 +25,8 @@ module sw_dolut(iT,iB,c,vcc,oT,oB);
 	input vcc;
 	input c;          // Challenge bit
 	output oT,oB;     // Output signals
-	
+
+        (*DONT_TOUCH = "TRUE"*)
 	LUT6_2 #( 
 		.INIT(64'hccccaaaaaaaacccc) // Specify LUT Contents
 	) SW(
